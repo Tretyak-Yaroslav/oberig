@@ -1,0 +1,226 @@
+// vor variables and general styles
+
+@import 'normalize.sass'
+@import 'mixins.sass'
+
+$color_0: #70BB86
+$color_1: #B3D564
+$color_2: #CCDE64
+$color_3: #74C48C
+$color_4: #519D73
+$color_5: #2C7439
+$color_6: #19381D
+$color_7: #999999
+$color_8: #666666
+$color_9: #333333
+$color_10: #EEEEEE
+$color_11: #FAFAFA
+$color_12: #FCFCFC
+$color_13: #FF6770
+$color_14: #FFF
+
+
+
+
+html
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+    padding: 0
+    margin: 0
+    font-size: 32px
+
+body
+    font-size: 0
+    scrollbar-color: $color_3 #F5F5F5
+    scrollbar-shadow-color: inset 0 0 6px rgba(0,0,0,0.3)
+    scrollbar-width: thin
+    &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        background-color: #F5F5F5
+    &::-webkit-scrollbar
+        width: 4px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        background-color: #000000
+        border: 2px solid $color_3
+
+
+div
+    font-size: inherit
+div,aside
+    &::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        background-color: #F5F5F5
+    &::-webkit-scrollbar
+        width: 4px
+        background-color: #F5F5F5
+    &::-webkit-scrollbar-thumb
+        background-color: #000000
+        border: 2px solid $color_3
+
+main
+    +r(992)
+        margin-top: 80px
+    +r(767)
+        margin-top: 40px
+h1
+    font-size: 1rem
+h2
+    font-size: 0.75rem
+
+p,span,ul,ol,li,b,a,input,select,sub,sup,strong,textarea,label
+
+    font-size: 0.5rem
+
+.body-overflow
+    overflow: hidden
+
+.main-container
+    //max-width: 1440px
+    width: 100%
+    position: relative
+    margin: 0 auto
+    //padding: 0 90px
+    //+r(1023)
+    //    padding: 0 52px
+    //+r(767)
+    //    padding: 0 16px
+    &_wrapper
+        position: fixed
+        z-index: 1
+
+.content-container
+    //max-width: 1208px
+    //margin-left: 16%
+    width: calc(100% - 232px)
+    margin-left: auto
+    +r(992)
+        width: auto
+
+.fw
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+.horizontal-line
+    height: 4px
+    background: $color_1
+
+iframe
+    width: 100%
+
+ol,ul
+    list-style: none
+
+.stretch
+    align-items: stretch
+
+.mobile-hide
+    +r(767)
+        display: none !important
+
+.btn
+    height: 40px
+    line-height: 40px
+    font-size: 0.37rem
+    line-height: 0.37rem
+    width: 214px
+    text-align: center
+    border: none
+    outline: none
+    cursor: pointer
+    font-weight: 600
+    position: relative
+    transition: transform .3s linear
+    overflow: hidden
+    color: $color_14
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: -80px
+        height: 98px
+        width: 80px
+        background: rgba(255, 255, 255, 0.2)
+        transition: all .3s linear
+        transform: skewX(20deg) translateX(0)
+
+    &:hover
+        &:after
+            transform: skewX(20deg) translateX(500px)
+    &-red
+        background: $color_13
+        display: flex
+        align-items: center
+        padding: 0 10px 0 20px
+        width: auto
+        height: 48px
+        span
+            font-size: 0.43rem
+        svg
+            display: block
+            margin-right: 16px
+        path
+            fill: $color_14
+
+    &-green
+        background: $color_3
+        display: flex
+        align-items: center
+        padding: 0 10px 0 20px
+        width: auto
+        &_padding
+            padding: 0.3rem 2.5rem
+            height: 40px
+            +r(767)
+                padding: 0.3rem 1rem
+        span
+            font-size: 0.43rem
+        svg
+            display: block
+            margin-right: 16px
+        path
+            fill: $color_14
+        &-bigger
+            width: 240px
+
+.search-mobile
+    position: relative
+    img.hide
+        visibility: hidden
+        +r(767)
+            visibility: visible
+    +r(767)
+        display: block
+        position: relative
+        font-size: 0
+        width: 40px
+        height: 40px
+        img
+            position: absolute
+            display: block
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            path
+                fill: $color_14
+
+#preloader
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 999
+    width: 100%
+    height: 100%
+    overflow: visible
+    background: #dbfae4 no-repeat center center
+    &.visible
+        visibility: visible
+        opacity: 1
+        transition: opacity .5s linear
+    &.hidden
+        visibility: hidden
+        opacity: 0
+        transition: visibility 0s .5s, opacity 0.5s linear
+

@@ -1,0 +1,266 @@
+.header
+    user-select: none
+    background: $color_11
+    +r(992)
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 3
+    &_content
+        display: contents
+    &_wrap
+        height: 80px
+        align-items: center
+        width: 100%
+        background: #FAFAFA
+        //justify-content: flex-end
+        margin-left: 232px
+        +r(1920px)
+            margin-left: 10rem
+        +mr(1824px)
+            margin-left: 10rem
+        +r(1680)
+            margin-left: 232px
+        +r(992)
+            margin-left: 0
+        +r(767)
+            height: 40px
+            justify-content: space-between
+    &_underline
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        height: 4px
+        background: $color_10
+        +r(767)
+            display: none
+        &::before
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 0
+            background: $color_3
+            +trs(width)
+    &_logo
+        height: 100%
+        display: flex
+        align-items: center
+    &_title
+        margin-left: 10px
+        margin-right: 25px
+        p
+         font-size: 0.38rem
+         +r(767)
+            font-size: 0.31rem
+         //+trs(all)
+    &_items-wrap
+        height: 100%
+        width: 100%
+        +r(992)
+            width: auto
+    &_item
+        position: relative
+        padding: 0 30px
+        height: 100%
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        flex-grow: 1
+        &:first-of-type
+            flex-shrink: 2
+            +r(767)
+                flex-shrink: 0
+
+
+        +r(1499)
+            padding: 0 10px
+        +r(767)
+            padding: 0 8px
+            width: 40px
+            flex-shrink: 1
+        &:hover
+            .header_underline:before
+                width: 100%
+            .header_title p,
+            .lang_selected
+                color: $color_4
+                text-shadow: 0 0 $color_4
+
+            .lang_arrow
+                path
+                    fill: $color_3
+
+
+        &:first-of-type
+            &:hover
+                .header_title p
+                    color: $color_13
+            .header_underline
+                &::before
+                    background: $color_13
+
+    &_leng
+        height: 100%
+
+.change-lang
+    flex-shrink: 0
+    &:hover
+        .lang_menu
+            display: block
+
+.lang
+    &_wrap
+        height: 100%
+        display: flex
+        align-items: center
+
+    &_selected
+        font-size: 0.38rem
+        +r(767)
+            font-size: 0.31rem
+        svg
+            display: inline-block
+            vertical-align: middle
+
+
+    &_menu
+        background: $color_11
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        display: none
+        z-index: 2
+        padding: 5px
+        text-align: center
+        li
+            margin-bottom: 6px
+        a
+            font-size: 0.38rem
+            +r(767)
+                font-size: 0.31rem
+            &:hover
+                font-weight: 900
+                color: $color_4
+
+
+.bigger-fs.active
+    path
+        fill: $color_4
+
+
+.header_burger
+    width: 16px
+    height: 14px
+    position: relative
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .5s ease-in-out
+    -moz-transition: .5s ease-in-out
+    -o-transition: .5s ease-in-out
+    transition: .5s ease-in-out
+    cursor: pointer
+    span
+        display: block
+        position: absolute
+        height: 2px
+        width: 50%
+        background: $color_3
+        opacity: 1
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+        -webkit-transition: .25s ease-in-out
+        -moz-transition: .25s ease-in-out
+        -o-transition: .25s ease-in-out
+        transition: .25s ease-in-out
+        &:nth-child(even)
+            left: 50%
+            border-radius: 0 9px 9px 0
+        &:nth-child(odd)
+            left: 0px
+            border-radius: 9px 0 0 9px
+
+        &:nth-child(3),
+        &:nth-child(4)
+            top: calc(50% - 1px)
+
+        &:nth-child(5),
+        &:nth-child(6)
+             top: 12px
+
+    &.open span:nth-child(1),
+    &.open span:nth-child(6)
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        -o-transform: rotate(45deg)
+        transform: rotate(45deg)
+
+    &.open span:nth-child(2),
+    &.open span:nth-child(5)
+        -webkit-transform: rotate(-45deg)
+        -moz-transform: rotate(-45deg)
+        -o-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+
+    &.open span:nth-child(1)
+        left: 1px
+        top: 1px
+
+    &.open span:nth-child(2)
+        right: 1px
+        top: 1px
+
+    &.open span:nth-child(3)
+        left: -50%
+        opacity: 0
+    &.open span:nth-child(4)
+        left: 100%
+        opacity: 0
+
+    &.open span:nth-child(5)
+        left: 1px
+        top: 8px
+
+    &.open span:nth-child(6)
+        right: 3px
+        top: 8px
+
+.mobile-menu
+    display: none
+    +r(992)
+        display: flex
+
+
+.mobile-logo
+    display: none
+
+    +r(992)
+        display: flex
+    +r(767)
+        margin-right: 15px
+.size
+    color: #74c48c
+    &.red
+        color: #ff6770
+    &.white
+        color: white
+.mr-7
+    margin-right: 7px
+.main-container_wrapper.content-container
+    z-index: 5
+.wrapper.stretch.fw
+    padding-top: 80px
+    +r(992)
+        padding-top: 0
+    +r(767)
+        margin-top: 132px
+.main-container_wrapper.footer
+    position: relative

@@ -1,0 +1,73 @@
+.disease
+    & p
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+        color: #333333
+        +r(767)
+            font-size: 14px
+            line-height: 22px
+    &-position
+        position: relative
+        margin-bottom: 0
+    &-header
+        margin-bottom: 24px
+    &-left
+        left: -10%
+        +r(767)
+            position: absolute
+            left: 33%
+    &-mb
+        +r(767)
+            margin-bottom: 15px
+    &-description_img
+        +r(767)
+            width: 48px
+    & li:before
+        content: "\2022"
+        padding-right: 10px
+        float: left
+        color: #74c48c
+        font-weight: 700
+    &-description
+        margin-bottom: 32px
+    &-mt
+        margin-top: 32px
+    &-description_li li
+        margin-top: 32px
+        +r(767)
+            font-size: 14px
+            line-height: 22px
+    &-border
+        background: #FFFFFF
+        border: 8px solid rgba(179, 213, 100, 0.35)
+        box-sizing: border-box
+        margin-top: 60px
+        margin-bottom: 30px
+    &-width_p
+        margin: auto
+        padding: 1rem 3.4rem
+        +r(767)
+            padding: 0.5rem 0.5rem 0rem 0.5rem
+.disease-width_p strong
+            font-weight: bold
+            +r(767)
+                font-weight: 700
+                font-size: 15px
+h2
+    +r(767)
+        font-size: 16px
+        line-height: 20px
+.width
+    &-9
+        width: 9%
+        margin: auto
+        +r(767)
+            width: 20%
+            margin: 1px
+    &-86
+        width: 86%
+        +r(767)
+            width: 78%

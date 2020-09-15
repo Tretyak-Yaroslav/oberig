@@ -1,0 +1,51 @@
+.map-container
+    position: relative
+    height: calc(  100vh - 175px)
+    +r(767)
+        height: 800px
+#map
+    height: 100%
+
+.map_info
+    padding: 40px
+    background: $color_14
+    position: absolute
+    right: 12%
+    top: 50%
+    transform: translateY(-50%)
+    max-width: 340px
+    box-sizing: border-box
+    z-index: 1
+    @media (max-width: 766px) and (orientation: landscape)
+        width: 50%
+    +r(767)
+        transform: translateY(0)
+        max-width: none
+        padding: 26px 20px 24px
+        right: 0%
+        top: auto
+        bottom: 0
+    .btn-red
+        width: 100%
+        justify-content: center
+    &-title
+        margin-bottom: 24px
+        h3
+            font-size: 0.75rem
+            color: $color_9
+
+    &-label
+        margin-bottom: 16px
+        font-size: 0.43rem
+        color: $color_8
+
+    &-text
+        font-size: 0.5rem
+        color: $color_9
+        font-weight: 900
+        margin-bottom: 16px
+
+    &-btn
+        button
+            +r(400)
+                width: 100%

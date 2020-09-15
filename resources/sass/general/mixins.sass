@@ -1,0 +1,23 @@
+@mixin rtl($property, $ltr-value, $rtl-value)
+    #{$property}: $ltr-value
+
+    [dir=rtl] &
+        #{$property}: $rtl-value
+
+
+=r($screen)
+    @media all and (max-width: $screen+'px')
+        @content
+
+=mr($screen)
+    @media all and (min-width: $screen+'px')
+        @content
+
+=b($screen)
+    @media all and (max-height: $screen+'px')
+        @content
+
+
+=trs($prop)
+    transition: $prop .3s ease-in-out
+

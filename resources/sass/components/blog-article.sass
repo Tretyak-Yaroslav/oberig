@@ -1,0 +1,583 @@
+.link
+    &-blog
+        padding-left: 10%
+
+.blog-stock
+    +r(992)
+        width: fit-content
+    +r(767)
+        width: inherit
+.blog
+    &-article_padding
+        padding: 1.5rem 1rem
+        +r(767)
+            padding: 0
+    &-li
+        margin-bottom: 2.5694444444444446vw
+        &:last-of-type
+            margin-bottom: 0
+        +r(767)
+            margin-bottom: 24px
+    +r(767)
+        margin-bottom: 24px
+    &-section
+        background: #FAFAFA
+        padding: 1rem 3rem 1rem 3rem
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            padding: 1rem 1rem 1rem 3rem
+        +r(767)
+            padding: 20px
+        & h1
+            font-weight: bold
+            font-size: 32px
+            line-height: 39px
+            +r(767)
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 22px
+    &-article .background
+        margin-left: 90px
+        top: 42px
+
+    &-background
+        background-image: url('/img/blog/businesswoman.svg')
+        background-color: darkseagreen
+        height: inherit
+        background-repeat: round
+        background-size: contain
+        +r(767)
+            background-repeat: no-repeat
+            background-size: cover
+        &-img
+            +r(767)
+                min-height: 330px
+            +r(356)
+                min-height: 290px
+    &-header
+        position: absolute
+        top: 0.4rem
+        left: -1rem
+        +r(767)
+            top: -1rem
+            left: -1rem
+    &-body
+        padding: 1rem 3rem 1rem 3rem
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            padding: 1rem 1rem 1rem 3rem
+        +r(767)
+            padding: 20px
+
+    &-title
+        display: flex
+    &-gray
+        font-size: 12px
+        color: #808080
+        +r(767)
+            color: #74C48C
+.blog-body p
+            font-size: 16px
+            font-weight: normal
+            line-height: 24px
+            margin-bottom: 0.7rem
+            +r(767)
+                margin-bottom: 1rem
+                font-size: 14px
+                line-height: 24px
+            &.strong
+                font-size: 18px
+                color: #333333
+                font-weight: bold
+
+                border-left: 2px solid #74C48C
+                padding-left: 10px
+                margin-bottom: 24px
+                margin-top: 10px
+
+.blog-body .description h3
+    font-size: 18px
+    color: #333333
+    font-weight: bold
+    border-left: 2px solid #74C48C
+    padding-left: 10px
+    margin-bottom: 24px
+    margin-top: 10px
+.blog-body h2
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    +r(767)
+        font-weight: bold
+        font-size: 16px
+        line-height: 24px
+.block
+    &-description
+        padding: 1rem 4rem 1rem 4rem
+        +r(767)
+            padding: 20px
+.blog .row
+    +r(767)
+        margin: 0
+.blog-title h1
+    font-size: 24px
+    line-height: 32px
+    font-weight: bold
+    margin-bottom: 1.6666666666666667vw
+    +r(767)
+        font-size: 18px
+        line-height: 24px
+.width
+    &-40
+        width: 38%
+        margin-right: 15px
+        +r(767)
+            width: 100%
+            margin-right: 0px
+    &-70
+        width: 70%
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            width: 58%
+        +r(767)
+            width: 100%
+    &-60
+        width: 60%
+        @media only screen and (max-width: 1024px) and (min-width: 768px)
+            width: 59%
+            height: fit-content
+        +r(767)
+            width: 100%
+            position: absolute
+            top: 15%
+    &-50
+        width: 49%
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            width: 100%
+        +r(767)
+            width: 100%
+
+    &-100
+        width: 99%
+    &-30
+        margin-right: 15px
+        +r(767)
+            margin-right: 0
+            width: 100%
+
+    & a
+        font-size: 18px
+        font-weight: bold
+        border-left: 2px solid #74C48C
+        padding-left: 10px
+.width img
+    +r(767)
+        width: inherit
+.share
+    background: linear-gradient(0deg, #EEEEEE, #EEEEEE), #70BB86
+    padding: 11px 20px 11px 49px
+    color: #70BB86
+    font-size: 12px
+    font-weight: bold
+    border: 0
+    +r(767)
+        width: 100%
+
+.share img
+        margin-left: 24px
+        display: inline-block
+        vertical-align: middle
+        +r(767)
+            margin-top: 0
+.fa-calendar
+    margin-right: 10px
+#symptoms
+    padding-right: 15px
+.mb
+    margin-bottom: 0.7rem
+.dowload
+    display: inline-block
+    vertical-align: middle
+    margin-right: 15px
+.btn
+    &-coment
+        background-color: #74c48c !important
+        line-height: 40px
+        justify-content: center
+    &-dowload
+        color: #74c48c
+        font-size: 16px
+        text-decoration: underline
+    &-tag
+        line-height: 40px
+        background: #EEEEEE
+        color: #666666
+        font-weight: bold
+        margin: auto
+        font-size: 12px
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            margin-bottom: 15px
+        +r(767)
+            width: 48%
+            margin-bottom: 8px
+    &-collapse
+        position: relative
+        margin: auto
+        transition: all 0.5s
+        display: flex
+        width: 195px
+        background: #fafafa
+        z-index: 1
+        margin-bottom: 50px
+        display: grid
+        cursor: pointer
+.tag
+    padding: 2rem 0rem
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        padding: 0
+    +r(767)
+        padding: 10px
+.avtor
+    &-comment
+        background: #FFFFFF
+        padding: 24px
+        &_bottom
+            rotate: 90
+    &-img
+        position: absolute
+        +r(767)
+            position: relative
+            left: 33%
+        &-bottom
+            position: absolute
+            right: -75px
+            transform: rotate(180deg)
+            bottom: 0
+            +r(767)
+                position: relative
+                right: none
+                left: 33%
+    &-p
+        margin: auto
+        width: 70%
+        line-height: 24px
+        position: relative
+        @media only screen and (max-width: 1280px) and (min-width: 768px)
+            width: 64%
+        +r(767)
+            font-size: 14px
+            width: 100%
+    &-articles
+        margin-bottom: 24px
+.collapse
+    display: block
+    max-height: 0px
+    overflow: hidden
+    transition: max-height .5s cubic-bezier(0, 1, 0, 1)
+    &.show
+        max-height: 600px
+        transition: max-height .5s ease-in-out
+    &-hr
+        position: relative
+        padding-top: 80px
+        +r(767)
+            padding: 0
+            line-height: 12px
+        & .hr-header
+            z-index: 0
+    &-arrow
+        position: absolute
+        left: 50%
+        top: 35px
+    &-center
+        display: flex
+        justify-content: center
+.block
+    margin-top: 10px
+    background: #FFFFFF
+    padding: 0
+
+.block__content
+    padding: 24px
+    height: 100%
+    +r(767)
+        padding: 15px
+.block__content p
+        font-size: 14px
+        line-height: 24px
+        color: #333333
+.mb-1
+    margin-bottom: 10px
+.mb-2
+    margin-bottom: 2rem
+    +r(767)
+        margin-bottom: 0.7rem
+li a.blog
+    color: #333333
+    font-weight: bold
+    border-left: 2px solid #74C48C
+    padding-left: 10px
+.strong
+
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 30px
+    background: none
+    margin-bottom: 15px
+    +r(767)
+        margin-bottom: 0.2rem
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+.green-p
+    color: #74C48C
+.mt
+    margin: 2.9rem
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        width: 50%
+.avtor-widht
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        height: 100%
+    +r(767)
+        width: inherit
+.blog-body h3
+    +r(767)
+        font-size: 16px
+        line-height: 20px
+
+.blog.carousel_item
+    +r(767)
+        padding: 0
+.blog.carousel_item:hover
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15)
+    +r(767)
+        box-shadow: none
+.blog-body .row
+    +r(767)
+        margin: 0
+.blog-section .row
+    +r(767)
+        margin: 0
+.blog-section.footer
+    padding: 0
+.blog-footer
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    color: #CCCCCC
+    line-height: 16px
+.about-btn.blog
+    +r(767)
+        margin: 0.2rem 0rem
+        padding: 0
+.lazy.mt
+    +r(767)
+        margin: auto
+        height: 122px
+        padding-top: 31%
+        display: flex
+    @media (max-width: 766px) and (orientation: landscape)
+        height: 185px
+        padding-top: 13%
+.blog-padding
+    +r(767)
+        padding: 0 10px
+.destop-hide
+    +mr(768)
+        display: none !important
+.form-coment
+    width: 80%
+    margin: auto
+.input
+    &-name, &-textarea, &-tel, &-email, &-checkbox
+        border: none
+        border-bottom: 1px solid gray
+        margin-bottom: 47px
+        width: 100%
+        resize: none
+        background: transparent
+    &-checkbox
+        border: none
+    &-name:focus, &-textarea:focus, &-tel:focus, &-email:focus
+        outline: none
+        border-bottom: 1px solid green
+.center
+    display: flex
+    justify-content: center
+    margin: auto
+
+.strong.center
+    margin-bottom: 10%
+.blog-body.carousel
+    padding: 0
+.block.collapse.add-coment
+    +r(767)
+        max-height: 600px
+.inherit
+    width: inherit
+#disease, #symptoms, #treatment, #error
+    padding-top: 80px
+    margin-top: -80px
+    -webkit-background-clip: content-box
+    background-clip: content-box
+    scroll-behavior: smooth
+    transition: transform .2s ease-out
+.arrow-down:after
+    content: ""
+    position: absolute
+    top: 35px
+    z-index: 1
+    transform: translateY(-50%) rotate(0deg)
+    width: 30px
+    height: 10px
+    background-image: url(/img/blog/arrow_down.png)
+    background-repeat: no-repeat
+    transition: all 0.4s linear
+    background-position-x: center
+    background-position-y: bottom
+    width: 100%
+.disable-on .arrow-down:after
+    transform: translateY(-50%) rotate(180deg)
+.content li::before
+    content: "•"
+    padding-right: 10px
+    float: left
+    color: #74c48c
+    font-weight: 700
+.blog-section.padding
+    padding: 0
+.pt-1
+    padding-top: 10px
+.calendar
+    mask: url(/img/icons/calendar.svg)
+    display: inline-block
+    width: 14px
+    height: 14px
+    background: #74c48c
+    margin-right: 10px
+    mask-size: cover
+    +r(767)
+        background: #808080
+.custom-nav
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin: 30px
+    margin-top: 10px
+    &__prev
+        svg
+            transform: rotate(180deg)
+    &__prev,
+    &__next
+        margin-right: 17px
+        padding: 5px 0
+        cursor: pointer
+        transition: all .2s ease-out
+        svg
+            path
+                transition: all .2s ease-out
+        &:hover
+            svg
+                path
+                    fill: #B3D564
+            transform: scale(1.2)
+    &__line
+        width: calc(100% - 17px * 3)
+        height: 1.6px
+        background: #EEEEEE
+        position: relative
+        .progress
+            position: absolute
+            left: 0
+            top: 0
+            height: 1.6px
+            background: $color_1
+            width: 0
+            transition: width .2s ease-out
+
+.blog-article
+    .owl-nav
+        display: none
+.owl-carousel
+    .owl-item
+        margin-bottom: 30px
+        margin-top: 30px
+.main-content
+    .blog-time
+        margin-bottom: 5.555555555555555vw
+        +r(767)
+            margin: 16px 0 19px 0
+    .blog-article_padding
+        padding: 1.5rem 0
+    .row
+        align-items: normal
+        flex-wrap: nowrap
+        margin-left: 0
+        margin-right: 0
+        justify-content: space-between
+    .blog__main-image-container
+        display: flex
+        justify-content: flex-end
+        @media ( max-width: 767px )
+            display: none
+    .blog__main-image
+        display: block
+        max-width: 100%
+        width: 571px
+        &.mobile
+            display: none
+            @media ( max-width: 767px )
+                display: block
+                margin: 25px auto
+    .width-60
+        width: calc( 60% - 20px)
+        margin-left: 20px
+        height: fit-content
+    .width-40
+        flex-direction: column
+        display: flex
+        justify-content: space-between
+        .btn 
+            margin-top: 5vw
+            @media ( max-width: 767px )
+                margin: 32px 0 24px 0
+.blog-body
+    .description
+        margin-top: 3.3333333333333335vw
+        &:first-of-type
+            margin-top: 0
+    .blog-dowload
+        margin: 1.6666666666666667vw 0
+        +r(767)
+        margin: 16px 0 40px 0
+
+.description 
+    &.flex-container
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        .left-content
+            width: 50%
+            @media ( max-width: 1360px )
+                width: calc(100% - 35% - 24px)
+            @media ( max-width: 767px )
+                width: 100%
+        .picture
+            width: calc( 50% - 24px)
+            margin-left: 24px
+            display: flex
+            justify-content: flex-end
+            @media ( max-width: 1360px )
+                width: 35%
+            @media ( max-width: 760px )
+                width: 100%
+                justify-content: center
+                margin: 24px auto
+            img
+                display: block
+                width: 100%
+                max-width: 452px
+.blog-article
+    .news
+        .btn
+            margin-bottom: 29px

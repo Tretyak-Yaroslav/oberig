@@ -1,0 +1,357 @@
+.about
+    font-size: 16px
+    line-height: 26px
+    color: #333333
+    +r(320)
+        font-size: 14px
+        line-height: 20px
+    &-btn
+        display: flex
+        justify-content: space-between
+        width: auto
+        margin-top: 2rem
+        //padding: 0 1.3rem
+        @media (max-width: 766px) and (orientation: landscape)
+            margin-bottom: 15px
+        +r(992)
+            padding: 0
+        +r(600)
+            margin: 0.5rem 0rem
+            padding: 0 1.3rem
+        & .btn.btn-green
+            +r(600)
+                display: none
+                width: auto
+                padding: 0
+            &.padding
+                padding: 0rem 1.5rem
+        & h3
+            margin-top: 1%
+
+    &-container
+        height: 517px
+        width: 100%
+        position: relative
+        margin: 0 auto
+
+    &-content
+        background-image: url(/img/about/about-header.png)
+        background-repeat: no-repeat
+        background-size: contain
+
+    &-section
+        padding: 8rem 4.5rem 1rem 4.5rem
+        & .row
+            +r(992)
+                margin-right: 15px
+                margin-left: 15px
+                justify-content: center
+                padding-bottom: 0
+            +r(320)
+                padding-bottom: 0
+        +r(767)
+            padding: 2rem 0.3rem
+        +r(414)
+            padding: 2rem 0.5rem
+        +r(375)
+            padding: 2rem 0.3rem
+        +r(360)
+            padding: 1rem 0.3rem
+        +r(320)
+            padding: 1rem 0.3rem
+
+    &-text
+        background: #ffffff
+        padding: 1rem 2.5rem
+        position: relative
+        min-height: 180px
+        background-image: url(/img/about/Layer.svg)
+        background-size: contain
+        background-repeat: no-repeat
+        background-position-x: right
+        +r(992)
+            padding: none
+        +r(767)
+            padding: 0.5rem 0.5rem
+            background-position-y: bottom
+        & .green
+            font-size: 24px
+            padding-top: 0.5rem
+            margin-bottom: 0.3rem
+            background: none
+            height: 40px
+
+            +r(767)
+                font-size: 18px
+
+        & svg
+            position: absolute
+            right: 0
+            top: 0
+.tabs
+    float: left
+    width: 214px
+    display: inline-block
+    +r(767)
+        float: none
+        width: auto
+        display: inline
+
+    & li
+        background-color: #74C48C
+        padding: 24.5px
+        color: white
+        font-size: 16px
+        border-bottom: 1px solid #A8C9B6
+.details
+    &-width
+        width: calc(100% - 232px)
+        margin-left: auto
+        overflow: auto
+        height: 370px
+        +r(767)
+            margin: auto
+        & span
+            color: #74C48C
+        & p
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 15px
+            +r(767)
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 0px
+.img-fluid
+    width: 100%
+    height: auto
+.background
+    position: relative
+    left: -30px
+    top: -70px
+    &-one
+        background: url(/img/icons/Vector.svg)
+        height: 46px
+        width: 36px
+        transform: rotate(-90deg)
+        height: 46px
+        position: absolute
+        margin-top: 30px
+        width: 36px
+        left: -34px
+    &-two
+        background: url(/img/icons/Vector.svg)
+        height: 46px
+        width: 36px
+    &-green
+        background-color: #74C48C
+.col-md-4
+    float: left
+    width: min-content
+    margin-right: 40px
+    @media (max-width: 766px) and (orientation: landscape)
+        & .orientation
+            display: inline
+    +r(767)
+        margin: auto
+.auto
+    margin: auto
+.blog
+    &.carousel_item
+        padding: 10px
+.blog .carousel_item p
+    +r(767)
+        font-size: 14px
+
+    &-padding
+        padding: 0 15px
+        & .btn.btn-green
+            margin-bottom: 20px
+            justify-content: center
+        & p
+            margin: 10px 0
+            color: black
+        h3
+            margin-top: 15px
+    & img
+        text-align: center
+    &-navigation
+        display: flex
+        margin-bottom: 15px
+        & hr
+            height: 1.59px
+            background-color: #eeeeee
+            border: none
+            margin: auto
+            width: -webkit-fill-available
+            &.active
+                background-color: #74C48C
+                width: 12%
+
+    &-mr
+        padding-right: 15px
+        color: #eeeeee
+        &.green
+            color: #74C48C
+    &-footer
+        font-weight: normal
+        font-size: 10px
+        line-height: 16px
+        color: #CCCCCC
+    &-time
+        display: flex
+        margin-bottom: 15px
+
+        & p
+            padding-left: 10px
+            background: none
+            +r(767)
+                font-size: 12px
+                color: gray
+                font-weight: 400
+                margin-bottom: 10px
+            & .green
+                font-weight: 500
+/** .blog:hover
+ box-shadow: 0px 4px 30px rgba(0,0 ,0 ,0.15)
+ color: #fcfcfc
+ animation: 2s **/
+.hide-destop
+    +mr(768)
+        display: none
+.floaft
+    float: left
+    padding-right: 10px
+    top: -7px
+    position: relative
+    visibility: hidden
+.two
+    visibility: hidden
+
+.breadcrumbs
+    height: 32px
+    position: relative
+    padding-top: 80px
+    margin-bottom: 8px
+    +r(766)
+        top: 0
+        margin-bottom: 0px
+        padding-top: 0
+    +r(992)
+        padding-top: 0
+    & a
+        position: relative
+        float: left
+        padding: 10.5px
+        color: #999999
+        background: white
+        transition: all 0.5s
+        +r(767)
+            font-size: 9px
+            z-index: 2
+        &:nth-child(2)
+            margin-right: 15px
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover::after,
+.breadcrumbs a.active
+    background: #B3D564
+    color: white
+.hr-header
+    position: absolute
+    top: 100.5px
+    width: 98%
+    color: #999999
+    z-index: -1
+    +r(992)
+        top: 21.5px
+    +r(767)
+        z-index: 1
+        top: 15px
+.two
+    right: -10px
+    top: 30%
+    position: absolute
+    color: #b3d564
+.breadcrumbs
+    & .fa-long-arrow-left
+        +r(767)
+            display: none
+    & .fa-caret-left
+        +mr(768)
+            display: none
+.owl-item .row
+    justify-content: space-between
+    & .col-md-4
+        width: 28%
+#card-about .owl-carousel
+    z-index: 0
+#bar
+    width: 0%
+    max-width: 100%
+    height: 4px
+    background: #7fc242
+.mt-1
+    margin-top: 15px
+#progressBar
+    width: 100%
+    background: #EDEDED
+
+.about-section
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        padding: 4rem 3rem 1rem 3rem
+.about-text
+    @media only screen and (max-width: 1280px) and (min-width: 768px)
+        padding: 1rem
+
+.tabs
+    width: 100%
+    height: 484px
+    overflow: hidden
+    margin-top: 50px
+
+.tab-header
+    padding-left: 0
+    display: inline-block
+    float: left
+
+.tab-header__item
+    cursor: pointer
+
+.tab-header__item.active
+    background-color: #B3D564
+    border: none
+    content: ""
+    position: relative
+    text-align: center
+    background-position-y: center !important
+    background-image: url(/img/icons/arrow-right_about.svg) !important
+    background-position-x: 25px !important
+    background-repeat: no-repeat !important
+
+.tab-header__item.active:after
+    content: ""
+    position: absolute
+    top: 50%
+    right: -19px
+    transform: translateY(-50%) rotate(0deg)
+    width: 30px
+    height: 24px
+    background-image: url(/img/icons/caret-right-solid.png)
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    +r(767)
+        background-image: none
+
+.tab-content
+    list-style: none
+    background: none !important
+    color: #333333 !important
+
+.tab-content__item
+    display: none
+
+.tab-content__item.active
+    display: block
+    border: none
+

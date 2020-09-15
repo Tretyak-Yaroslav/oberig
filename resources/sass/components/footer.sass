@@ -1,0 +1,130 @@
+.footer
+    +r(767)
+        margin-bottom: 40px
+    &_top
+        background: $color_4
+        padding: 0 16px
+        +r(767)
+            display: none
+    &-link
+        font-weight: normal
+        font-size: 10px
+        color: #CCCCCC
+        line-height: 16px
+        border-border: 1px solid
+    &_top-wrap
+        padding: 32px 0
+        //width: 72%
+        max-width: 930px
+        margin: 0 auto
+        justify-content: center
+    &_top-group
+        //width: 25%
+        padding: 0 6.4%
+        position: relative
+        +r(1199)
+            padding: 0 2.5%
+
+        &:not(:last-of-type):after
+            content: ""
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 64px
+            width: 1px
+            background: $color_14
+            opacity: 0.5
+        &:first-of-type
+           padding-left: 0
+        &:last-of-type
+            padding-right: 0
+
+    &_group-wrap
+        width: max-content
+        margin: 0 auto
+    &_item
+        font-size: 0
+        &:first-of-type
+            margin-bottom: 16px
+        a,p
+            display: flex
+            align-items: center
+            color: $color_14
+            user-select: none
+            +r(767)
+                display: inline-block
+        img
+            margin-right: 8px
+            +r(767)
+                margin-right: 0
+                height: 33px
+
+    &_bottom
+        padding: 16px 12px 16px 24px
+        background: $color_5
+        align-items: center
+        +r(767)
+            background: $color_4
+            padding: 16px 12px 15px 24px
+
+        &-wrap
+            align-items: center
+            +r(767)
+                display: block
+        &-group
+            align-items: center
+            +r(767)
+                display: block
+                margin-bottom: 8px
+            .footer_item
+                margin-right: 24px
+
+        .footer_item
+            margin-bottom: 0
+            +r(767)
+                margin-right: 0
+                text-align: center
+                &:not(:last-of-type)
+                    margin-bottom: 8px
+
+            img
+                height: 24px
+                display: block
+            a,p
+                font-size: 0.31rem
+                user-select: none
+    &_mobile
+        padding: 0 16px
+        height: 40px
+        background: $color_14
+        align-items: center
+        display: none
+        +r(767)
+            display: flex
+            position: fixed
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 1
+        &-item
+
+            a
+                display: flex
+                align-items: center
+                color: $color_8
+                user-select: none
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 10px
+                line-height: 12px
+            img,svg
+                height: 14px
+                margin-right: 9px
+
+            &:hover
+                a
+                    font-weight: 600
+                    color: $color_4
+                    user-select: none

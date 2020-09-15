@@ -1,0 +1,120 @@
+.right-menu
+    width: 344px
+    background: $color_4
+    max-height: calc( 100vh - 80px - 149px)
+    position: relative
+    overflow: hidden
+    +r(1199)
+        width: 228px
+
+    +r(992)
+        width: 320px
+
+    +r(767)
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        height: 390px
+    @media (max-width: 766px) and (orientation: landscape)
+        max-height: 185px
+    &_item
+        display: flex
+        position: relative
+        background-position: top right
+        background-repeat: no-repeat
+        background-size: contain
+        overflow: hidden
+        height: 111px
+        max-height: calc( (100vh - 80px - 149px) / 6)
+        align-items: center
+        z-index: 1
+        +r(1920)
+            height: 132px
+        +r(767)
+            width: 50%
+            height: auto
+            max-height: fit-content
+            text-align: center
+            justify-content: center
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(6)
+                background: rgb(116,196,140,0.7)
+
+        &-bg
+            opacity: 0
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: right
+            transition: opacity .5s
+            +r(767)
+                display: none
+        &:hover,
+        &.show
+            .right-menu_item-bg
+                opacity: 1
+                transition: opacity .1s
+
+        &-img
+            position: absolute
+            right: 0
+            top: 0
+            height: 100%
+            background-blend-mode: darken
+        &-title
+            position: relative
+            z-index: 1
+            padding: 0 40px
+            font-size: 0.57rem
+            font-weight: 600
+            color: transparent
+            line-height: 0.62rem
+
+            +r(767)
+                padding: 0 16px
+
+        &.with-color
+            .right-menu_item-title
+                color: $color_14
+                transition: color .3s
+    .tree
+        position: absolute
+        right: 0
+        z-index: 0
+        max-width: 100%
+        +mr(767)
+            bottom: 50px
+
+        &_leaf
+            stroke-dasharray: 372
+            stroke-dashoffset: 372
+            transform-origin: 100% 100%
+            @for $i from 1 through 19
+                &:nth-of-type(#{$i}n)
+                    animation: leaf-show 2s ease-in-out #{$i/2}s both , leaf-move 2s ease-in-out 2s infinite
+        &_trunk
+            transform-origin: 100% 100%
+            animation: leaf-move 2s ease-in-out 2s infinite
+
+@keyframes leaf-show
+    0%
+        stroke-dasharray: 372
+        stroke-dashoffset: 372
+
+    100%
+        stroke-dasharray: 372
+        stroke-dashoffset: 225
+
+@keyframes leaf-move
+    0%
+        transform: rotate(0deg)
+    33%
+        transform: rotate(-0.8deg)
+    66%
+        transform: rotate(0.6deg)
+    99%
+        transform: rotate(0.1deg)

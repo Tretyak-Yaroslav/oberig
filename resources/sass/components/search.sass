@@ -1,0 +1,45 @@
+.search
+    background: $color_14
+    +r(767)
+        position: absolute
+        top: -104px
+        width: 100%
+    &_wrap
+        padding: 2.7777777777777777vw 3rem 2.7083333333333335vw 3rem
+        box-sizing: border-box
+        +r(1280)
+            padding: 1rem 1rem 1rem 3rem
+        +r(767)
+            padding: 20px
+    &_title
+        h3
+            color: $color_9
+            font-weight: 900
+            font-size: 0.75rem
+            +r(767)
+                font-size: 0.56rem
+    &_group
+        align-items: flex-end
+        a
+            font-size: 0.5rem
+            color: $color_14
+
+
+    &_input
+        width: 100%
+        margin-right: 24px
+        input
+            width: 100%
+            border: none
+            border-bottom: 1px solid $color_7
+            outline: none
+            padding-bottom: 7px
+            padding-left: 8px
+            font-size: 0.43rem
+            &::placeholder
+                color: $color_7
+                font-size: 0.43rem
+            +r(767)
+                font-size: 0.37rem
+                &::placeholder
+                    font-size: 0.37rem
